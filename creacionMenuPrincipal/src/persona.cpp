@@ -75,3 +75,44 @@ void persona::menu()
 	getch();
     }while(choice!= 7);
 }
+void persona::generacionP()
+{
+    int choice;
+    char v;
+    do
+    {
+        system("cls");
+        cout << "\t\t\t\t *********************************************"<<endl;
+        cout << "\t\t\t\t    | Generacion de Poliza de la empresa |"<<endl;
+        cout << "\t\t\t\t *********************************************"<<endl;
+        cout << "\t\t\t\t  1. Ingreso de información"<<endl;
+        cout << "\t\t\t\t  2. Desplegar información"<<endl;
+        cout << "\t\t\t\t  3. Salir"<<endl;
+
+        cout << "\t\t\t\t *********************************************"<<endl;
+        cout << "\t\t\t\t  Opcion a escoger: [1/2/3]"<<endl;
+        cout << "\t\t\t\t *********************************************"<<endl;
+        cout << "\t\t\t\t Selecciona tu opcion: "<<endl;
+        cin >> choice;
+
+        switch(choice)
+    {
+    case 1:
+    	do
+    	{
+    		insert();
+    		cout<<"\n\t\t\t Ingresar mas informacion(S,N): ";
+    		cin>>v;
+		}while(v=='s'||v=='S');
+		break;
+	case 2:
+		desplegarI();
+		break;
+	case 3:
+		exit(0);
+	default:
+		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
+	}
+	getch();
+    }while(choice!= 3);
+}
