@@ -75,4 +75,3 @@ void persona::menu()
 	getch();
     }while(choice!= 7);
 }
-
