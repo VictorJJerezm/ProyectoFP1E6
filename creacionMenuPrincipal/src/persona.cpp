@@ -5,7 +5,7 @@
 #include<cstdlib>
 #include<conio.h>
 #include<iomanip>
-
+/*
 using namespace std;
 
 persona::persona()
@@ -74,7 +74,8 @@ void persona::menu()
 	}
 	getch();
     }while(choice!= 7);
-}
+}*/
+///Se agrega Menu de impuestos
 void persona::impuestos()
 {
     int choice;
