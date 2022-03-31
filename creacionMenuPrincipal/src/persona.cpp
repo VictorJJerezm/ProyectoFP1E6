@@ -5,7 +5,7 @@
 #include<cstdlib>
 #include<conio.h>
 #include<iomanip>
-
+/*
 using namespace std;
 
 persona::persona()
@@ -74,7 +74,7 @@ void persona::menu()
 	}
 	getch();
     }while(choice!= 7);
-}
+}*/
 ///Menu de generación de Poliza
 void persona::generacionP()
 {
