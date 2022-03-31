@@ -76,8 +76,14 @@ void persona::menu()
     }while(choice!= 7);
 
 }*/
+///Menu de generaci�n de Poliza
+void persona::generacionP()
+=======
+
+}*/
 ///Se agrega Menu de impuestos
 void persona::impuestos()
+
 {
     int choice;
         char l;
