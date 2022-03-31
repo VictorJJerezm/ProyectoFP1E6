@@ -14,15 +14,6 @@ class persona
         void transferenciaB();
         void generacionP();
         void impuestos();
-        void insert();
-
-        void visualizarI();
-        void visualizarS();
-        void calculoS();
-        void visualizarR();
-=======
-        void desplegarI();
-
 
     protected:
 

@@ -14,13 +14,13 @@
 	<conio.h>
 	<iomanip>
 
-1648663153 source:c:\users\bryan\proyectos\proyectofinal\colaborador\nuevo\proyectofp1e6\creacionmenuprincipal\main.cpp
+1648685989 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\creacionmenuprincipal\main.cpp
 	<iostream>
 	"persona.h"
 
-1648688345 c:\users\bryan\proyectos\proyectofinal\colaborador\nuevo\proyectofp1e6\creacionmenuprincipal\include\persona.h
+1648685989 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\creacionmenuprincipal\include\persona.h
 
-1648689193 source:c:\users\bryan\proyectos\proyectofinal\colaborador\nuevo\proyectofp1e6\creacionmenuprincipal\src\persona.cpp
+1648685989 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\creacionmenuprincipal\src\persona.cpp
 	<iostream>
 	"persona.h"
 	<fstream>
