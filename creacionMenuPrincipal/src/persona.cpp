@@ -75,3 +75,58 @@ void persona::menu()
 	getch();
     }while(choice!= 7);
 }
+void persona::impuestos()
+{
+    int choice;
+        char l;
+        do
+        {
+            system ("cls");
+
+        cout << "\t\t\t\t *********************************************"<<endl;
+        cout << "\t\t\t\t            | Calculo de Impuestos |"<<endl;
+        cout << "\t\t\t\t *********************************************"<<endl;
+        cout << "\t\t\t\t  1. Ingreso de sueldos"<<endl;
+        cout << "\t\t\t\t  2. Visualizar Impuestos"<<endl;
+        cout << "\t\t\t\t  3. Visualizar sueldos"<<endl;
+        cout << "\t\t\t\t  4. Calculo de sueldos"<<endl;
+        cout << "\t\t\t\t  5. Visuzalizar retenciones"<<endl;
+        cout << "\t\t\t\t  6. Salir"<<endl;
+
+        cout << "\t\t\t\t *********************************************"<<endl;
+        cout << "\t\t\t\t Opcion a escoger: [1/2/3/4/5]"<<endl;
+        cout << "\t\t\t\t *********************************************"<<endl;
+        cout << "\t\t\t\t Selecciona tu opcion: "<<endl;
+        cin choice;
+
+        switch(choice)
+    {
+    case 1:
+    	do
+    	{
+    		insert();
+    		cout<<"\n\t\t\t Agregar otro sueldo(S,N): ";
+    		cin>>l;
+		}while(l=='s'||l=='S');
+		break;
+	case 2:
+		visualizarI();
+		break;
+	case 3:
+		visualizarS();
+		break;
+	case 4:
+		calculoS();
+		break;
+    case 5:
+        visualizarR();
+        break;
+	case 6:
+		exit(0);
+	default:
+		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
+	}
+	getch();
+    }while(choice!= 6);
+        }
+}
