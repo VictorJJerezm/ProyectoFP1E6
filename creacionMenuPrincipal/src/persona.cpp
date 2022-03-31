@@ -75,6 +75,7 @@ void persona::menu()
 	getch();
     }while(choice!= 7);
 }
+///Menu de generación de Poliza
 void persona::generacionP()
 {
     int choice;
