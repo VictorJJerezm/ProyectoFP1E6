@@ -16,7 +16,7 @@ persona::persona()
 persona::~persona()
 {
     //dtor
-}
+}/*
 void persona::menu()
 {
     int choice;
@@ -57,7 +57,7 @@ void persona::menu()
 		break;
 	case 3:
 		informesN();
-		break;
+		break;/*
 	case 4:
 		transferenciaB();
 		break;
@@ -74,46 +74,31 @@ void persona::menu()
 	}
 	getch();
     }while(choice!= 7);
-}
-///Menu de generación de Poliza
-void persona::generacionP()
+} */
+void persona::informesN()
 {
-    int choice;
-    char v;
-    do
-    {
-        system("cls");
-        cout << "\t\t\t\t *********************************************"<<endl;
-        cout << "\t\t\t\t    | Generacion de Poliza de la empresa |"<<endl;
-        cout << "\t\t\t\t *********************************************"<<endl;
-        cout << "\t\t\t\t  1. Ingreso de información"<<endl;
-        cout << "\t\t\t\t  2. Desplegar información"<<endl;
-        cout << "\t\t\t\t  3. Salir"<<endl;
+int id, phone, dia, salario;
+	string name;
 
-        cout << "\t\t\t\t *********************************************"<<endl;
-        cout << "\t\t\t\t  Opcion a escoger: [1/2/3]"<<endl;
-        cout << "\t\t\t\t *********************************************"<<endl;
-        cout << "\t\t\t\t Selecciona tu opcion: "<<endl;
-        cin >> choice;
 
-        switch(choice)
-    {
-    case 1:
-    	do
-    	{
-    		insert();
-    		cout<<"\n\t\t\t Ingresar mas informacion(S,N): ";
-    		cin>>v;
-		}while(v=='s'||v=='S');
-		break;
-	case 2:
-		desplegarI();
-		break;
-	case 3:
-		exit(0);
-	default:
-		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
-	}
-	getch();
-    }while(choice!= 3);
+	system("cls");
+	fstream file;
+    cout << "\t\t\t\t *********************************************************************"<<endl;
+    cout << "\t\t\t\t ****************|Generar Informes de nomina|************"<<endl;
+    cout << "\t\t\t\t *********************************************************************"<<endl;
+
+	cout<<"\n   Ingrese los datos del empleado"<<endl;
+    cout<<"\t\t\tIngresar ID del empleado         : ";
+	cin>>id;
+	cout<<"\t\t\tIngresar Nombre del empleado     : ";
+	cin>>name;
+	cout<<"\t\t\tIngresar Celular del empleado  : ";
+	cin>>phone;
+	cout<<"\t\t\tIngresar dias laborados   : ";
+	cin>>dia;
+	cout<<"\t\t\tIngresar salario basico   : ";
+	cin>>salario;
+	file.open("informesNomina.txt", ios::app | ios::out);
+	file<<std::left<<std::setw(15)<< id <<std::left<<std::setw(15)<< name <<std::left<<std::setw(15)<< phone <<std::left<<std::setw(15) << dia <<std::left<<std::setw(15) << salario <<std::left<<std::setw(15) <<"\n";
+	file.close();
 }
