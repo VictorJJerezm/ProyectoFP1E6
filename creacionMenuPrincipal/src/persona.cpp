@@ -5,12 +5,12 @@
 #include<cstdlib>
 #include<conio.h>
 #include<iomanip>
-
+/*
 using namespace std;
 
 persona::persona()
 {
-    //ctor
+    string id,name;
 }
 
 persona::~persona()
@@ -75,3 +75,29 @@ void persona::menu()
 	getch();
     }while(choice!= 7);
 }
+*/
+void persona::mantenimientos()
+{
+	int id, phone;
+	string name,manten ;
+
+
+	system("cls");
+	fstream file;
+    cout << "\t\t\t\t *********************************************************************"<<endl;
+    cout << "\t\t\t\t ****************Agregar detalles Persona de mantenimiento************"<<endl;
+
+	cout<<"\n   Agregue los datos de la persona que va a realizar el mantenimiento del software"<<endl;
+    cout<<"\t\t\tIngrese ID de Persona         : ";
+	cin>>id;
+	cout<<"\t\t\tIngrese Nombre de Persona     : ";
+	cin>>name;
+	cout<<"\t\t\tIngresa Celular de Persona   : ";
+	cin>>phone;
+	cout<<"\t\t\tIngresa mantenimiento a realizar   : ";
+	cin>>manten;
+	file.open("registroDeMantenimiento.txt", ios::app | ios::out);
+	file<<std::left<<std::setw(15)<< id <<std::left<<std::setw(15)<< name <<std::left<<std::setw(15)<< phone <<std::left<<std::setw(15) << manten   <<std::left<<std::setw(15) << "\n";
+	file.close();
+}
+

@@ -14,3 +14,18 @@
 	<conio.h>
 	<iomanip>
 
+1648685989 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\creacionmenuprincipal\main.cpp
+	<iostream>
+	"persona.h"
+
+1648685989 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\creacionmenuprincipal\include\persona.h
+
+1648685989 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\creacionmenuprincipal\src\persona.cpp
+	<iostream>
+	"persona.h"
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
