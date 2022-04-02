@@ -76,94 +76,53 @@ void persona::menu()
     }while(choice!= 7);
 
 }*/
-///Menu de generaci�n de Poliza
-void persona::generacionP()
-=======
 
-}*/
-///Se agrega Menu de impuestos
-void persona::impuestos()
-
+///Menu de generaci�n de Nómina
+void persona::generacionN()
 {
-    int choice;
-        char l;
-        do
-        {
-            system ("cls");
-
-        cout << "\t\t\t\t *********************************************"<<endl;
-        cout << "\t\t\t\t            | Calculo de Impuestos |"<<endl;
-        cout << "\t\t\t\t *********************************************"<<endl;
-        cout << "\t\t\t\t  1. Ingreso de sueldos"<<endl;
-        cout << "\t\t\t\t  2. Visualizar Impuestos"<<endl;
-        cout << "\t\t\t\t  3. Visualizar sueldos"<<endl;
-        cout << "\t\t\t\t  4. Calculo de sueldos"<<endl;
-        cout << "\t\t\t\t  5. Visuzalizar retenciones"<<endl;
-        cout << "\t\t\t\t  6. Salir"<<endl;
-
-        cout << "\t\t\t\t *********************************************"<<endl;
-        cout << "\t\t\t\t Opcion a escoger: [1/2/3/4/5]"<<endl;
-        cout << "\t\t\t\t *********************************************"<<endl;
-        cout << "\t\t\t\t Selecciona tu opcion: "<<endl;
-        cin choice;
-
-        switch(choice)
-    {
-    case 1:
-    	do
-    	{
-    		insert();
-    		cout<<"\n\t\t\t Agregar otro sueldo(S,N): ";
-    		cin>>l;
-		}while(l=='s'||l=='S');
-		break;
-	case 2:
-		visualizarI();
-		break;
-	case 3:
-		visualizarS();
-		break;
-	case 4:
-		calculoS();
-		break;
-    case 5:
-        visualizarR();
-        break;
-	case 6:
-		exit(0);
-	default:
-		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
-	}
-	getch();
-    }while(choice!= 6);
-        }
-=======
-} */
-void persona::informesN()
-{
-int id, phone, dia, salario;
-	string name;
+	int ID;
+	float sueldo, horast, horase, resultado, r_iva, r_isr, r_horase;
+	float horas_extra = 200.00;
+	float IVA = 0.12;
+	float ISR = 0.05;
+	string nombre;
 
 
 	system("cls");
 	fstream file;
     cout << "\t\t\t\t *********************************************************************"<<endl;
-    cout << "\t\t\t\t ****************|Generar Informes de nomina|************"<<endl;
+    cout << "\t\t\t\t **************** Generador de Generación Nómina ************"<<endl;
     cout << "\t\t\t\t *********************************************************************"<<endl;
 
-	cout<<"\n   Ingrese los datos del empleado"<<endl;
-    cout<<"\t\t\tIngresar ID del empleado         : ";
-	cin>>id;
-	cout<<"\t\t\tIngresar Nombre del empleado     : ";
-	cin>>name;
-	cout<<"\t\t\tIngresar Celular del empleado  : ";
-	cin>>phone;
-	cout<<"\t\t\tIngresar dias laborados   : ";
-	cin>>dia;
-	cout<<"\t\t\tIngresar salario basico   : ";
-	cin>>salario;
-	file.open("informesNomina.txt", ios::app | ios::out);
-	file<<std::left<<std::setw(15)<< id <<std::left<<std::setw(15)<< name <<std::left<<std::setw(15)<< phone <<std::left<<std::setw(15) << dia <<std::left<<std::setw(15) << salario <<std::left<<std::setw(15) <<"\n";
-	file.close();
+	cout<<"\n Por favor, inserte los datos requeridos para la generación nómina del usuario: "<<endl;
 
+    cout<<"\t\t\t Ingrese ID de Persona: ";
+	cin>>ID;
+
+	cout<<"\t\t\t Ingrese Nombre de Persona: ";
+	cin>>nombre;
+
+	cout<<"\t\t\t Ingresa el sueldo base actual del empleado en quetzales: ";
+	cin>>sueldo;
+
+	cout<<"\t\t\t Ingresa las horas trabajadas por el empleado: ";
+	cin>>horast;
+
+	cout<<"\t\t\t Ingresa las horas extra trabajadas por el empleado: ";
+	cin>>horase;
+
+	cout << "\t\t\t\t *********************************************************************"<<endl;
+    cout << "\t\t\t\t **************** Los datos han sido ingresados exitosamente ************"<<endl;
+
+	r_iva = sueldo * IVA;
+	r_isr = sueldo * ISR;
+	r_horase = horase * horas_extra;
+
+	resultado = (sueldo - r_iva - r_isr) + r_horase;
+
+	file.open("GeneraciónN.txt", ios::app | ios::out);
+
+	file<<std::left<<std::setw(15)<< ID <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< sueldo <<std::left<<std::setw(15) << r_iva <<std::left<<std::setw(15)<< r_isr <<std::left<<std::setw(15)<< horast <<std::left<<std::setw(15)<< r_horase <<std::left<<std::setw(15)<< resultado <<std::left<<std::setw(15)<< "\n";
+
+	file.close();
 }
