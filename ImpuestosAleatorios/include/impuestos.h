@@ -9,15 +9,12 @@ class impuestos
     public:
         impuestos(int = 0, string = "", double = 0);
 
-    // funciones de acceso para numeroCuenta
    void establecerNumeroId( int );
    int obtenerNumeroId() const;
 
-   // funciones de acceso para primerNombre
    void establecerUsuario( string );
    string obtenerUsuario() const;
 
-   // funciones de acceso para el saldo
    void establecerSueldo( double );
    double obtenerSueldo() const;
 
