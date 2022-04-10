@@ -6,17 +6,21 @@ using namespace std;
 class empleados
 {
     public:
-        void menu();
-		void insert();
-		void display();
-		void modify();
-		void search();
-		void delet();
-        empleados();
-        virtual ~empleados();
+        empleados(int = 0, string = "", int = 0);
 
-    protected:
-    private:string id,nombre,telefono;
+   void establecerNumeroId( int );
+   int obtenerNumeroId() const;
+
+   void establecerUsuario( string );
+   string obtenerUsuario() const;
+
+   void establecerTelefono( int );
+   int obtenerTelefono() const;
+
+    private:
+        int numeroId;
+        char usuario[ 10 ];
+        int telefono;
 };
 
 #endif // EMPLEADOS_H
