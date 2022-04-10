@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1649629265 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofase2e6\main.cpp
+	<iostream>
+	"usuario.h"
+	"empleados.h"
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	"empleados.h"
+
+1649627450 c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofase2e6\include\usuario.h
+
+1649628549 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofase2e6\src\usuario.cpp
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"usuario.h"
+	"empleados.h"
+
+1649625138 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofase2e6\src\persona.cpp
+	<iostream>
+	"persona.h"
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1649625138 c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofase2e6\include\persona.h
+
+1649626988 c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofase2e6\include\empleados.h
+	<iostream>
+
+1649626988 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofase2e6\src\empleados.cpp
+	<iostream>
+	<cstring>
+	"empleados.h"
+
