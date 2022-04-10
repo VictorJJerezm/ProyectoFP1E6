@@ -36,8 +36,9 @@ void mostrarLinea( ostream&, const impuestos & );
 void eliminarRegistro( fstream& );
 void calcularSueldo(fstream&);
 void obtenerSueldo( const char * const);
+void conceptosS();
 
-enum Opciones { Ingresar = 1, Consultar, Buscar, Borrar, FIN };
+enum Opciones { Ingresar = 1, Consultar, Buscar, Borrar, Conceptos, FIN };
 
 int main()
 {
@@ -72,6 +73,10 @@ int main()
             eliminarRegistro( creditoEntradaSalida );
             break;
 
+         case Conceptos:
+            conceptosS();
+            break;
+
          default:
             cerr << "Opcion incorrecta" << endl;
             break;
@@ -94,9 +99,10 @@ int escribirOpcion()
         << "\t\t\t 2 - Desplegar informacion salarial" << endl
         << "\t\t\t 3 - Buscar inforacion salarial" << endl
         << "\t\t\t 4 - Borrar informacion salarial "<< endl
-        << "\t\t\t 5 - Salir "<<endl;
+        << "\t\t\t 5 - Conceptos "<< endl
+        << "\t\t\t 6 - Salir "<<endl;
     cout<< "\t\t\t *********************************************"<<endl;
-    cout<< "\t\t\t Ingresa tu opcion [1/2/3/4/5]"<<endl;
+    cout<< "\t\t\t Ingresa tu opcion [1/2/3/4/5/6]"<<endl;
     cout<< "\t\t\t *********************************************"<<endl;
     cout<< "\n\t\t\t Opcion: ";
 
@@ -222,6 +228,20 @@ void eliminarRegistro( fstream &eliminarDeArchivo )
 
    else
       cerr << "La posicion #" << numeroId << " esta vacia.\n";
+
+}
+
+void conceptosS()
+{
+    system("cls");
+
+    cout<<" Cantidades a calcular: "<<endl;
+    cout<<" Mensual: "<<endl;
+    cout<<" - 4.83% IGSS "<<endl;
+    cout<<" + Q250  Bono Incentivo "<<endl;
+    cout<<" Anual: "<<endl;
+    cout<<" + 100% Bono 14 "<<endl;
+    cout<<" + 100% Aguinaldo "<<endl;
 
 }
 
