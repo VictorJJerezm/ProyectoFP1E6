@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1649537168 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\impuestosaleatorios\src\impuestos.cpp
+	<iostream>
+	<cstring>
+	"impuestos.h"
+
+1649532873 c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\impuestosaleatorios\include\impuestos.h
+	<iostream>
+
+1649561982 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\impuestosaleatorios\main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	"impuestos.h"
+
