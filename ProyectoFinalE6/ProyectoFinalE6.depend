@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1649633240 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofinale6\main.cpp
+1651540101 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofinale6\main.cpp
 	<iostream>
 	"usuario.h"
 
-1649634544 c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofinale6\include\usuario.h
+1651540101 c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofinale6\include\usuario.h
 
 1649630413 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofinale6\src\empleado.cpp
 	<iostream>
@@ -17,7 +17,7 @@
 1649633042 c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofinale6\include\empleado.h
 	<iostream>
 
-1649634942 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofinale6\src\usuario.cpp
+1651540101 source:c:\users\vaio\proyectos\proyectofp1e6\proyectofp1e6\proyectofinale6\src\usuario.cpp
 	<iostream>
 	<istream>
 	<fstream>
