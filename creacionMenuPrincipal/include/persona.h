@@ -20,7 +20,7 @@ class persona
         void visualizarS();
         void calculoS();
         void visualizarR();
-=======
+
         void desplegarI();
 
 
