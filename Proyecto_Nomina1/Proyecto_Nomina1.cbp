@@ -34,6 +34,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Banco.h" />
+		<Unit filename="include/Empresas.h" />
+		<Unit filename="include/Poliza.h" />
 		<Unit filename="include/conceptos.h" />
 		<Unit filename="include/empleados.h" />
 		<Unit filename="include/impuestos.h" />
@@ -41,6 +44,9 @@
 		<Unit filename="include/ingreso.h" />
 		<Unit filename="include/menus.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Banco.cpp" />
+		<Unit filename="src/Empresas.cpp" />
+		<Unit filename="src/Poliza.cpp" />
 		<Unit filename="src/conceptos.cpp" />
 		<Unit filename="src/empleados.cpp" />
 		<Unit filename="src/impuestos.cpp" />

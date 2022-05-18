@@ -3,6 +3,9 @@
 #include "impuestos.h"
 #include "informe.h"
 #include "empleados.h"
+#include "Banco.h"
+#include "Empresas.h"
+#include  "Poliza.h"
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -45,6 +48,7 @@ void menus::menuGeneral(){
 
     conceptos punto;
     informe gomu;
+    Poliza met;
     switch(choice)
     {
     case 1:
@@ -65,7 +69,7 @@ void menus::menuGeneral(){
 		//search();
 		break;
     case 5:
-        //XD();
+       met.menu();
         break;
     case 6:
         punto.menu();
@@ -107,6 +111,8 @@ void menus::mantenimientos(){
 
         impuestos punto;
         empleados gomu;
+        Banco mar;
+        Empresas av;
 
         switch(choice)
         {
@@ -123,10 +129,10 @@ void menus::mantenimientos(){
 		punto.escribirOpcion();
 		break;
 	case 5:
-		//menu5();
+		mar.menu();
 		break;
     case 6:
-        //menu6();
+        av.menu();
         break;
 	case 7:
 		//menuGeneral();
