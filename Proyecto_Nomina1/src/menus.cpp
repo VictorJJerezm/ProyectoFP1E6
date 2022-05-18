@@ -44,7 +44,7 @@ void menus::menuGeneral(){
     cin>>choice;
 
     conceptos punto;
-    informe coma;
+    informe gomu;
     switch(choice)
     {
     case 1:
@@ -59,7 +59,7 @@ void menus::menuGeneral(){
 		//display();
 		break;
 	case 3:
-		coma.menu();
+		gomu.menu();
 		break;
 	case 4:
 		//search();
@@ -106,12 +106,12 @@ void menus::mantenimientos(){
         cin>>choice;
 
         impuestos punto;
-        empleados coma;
+        empleados gomu;
 
         switch(choice)
         {
     case 1:
-    	coma.menu();
+    	gomu.menu();
 		break;
     case 2:
 		//menuprincipal();
