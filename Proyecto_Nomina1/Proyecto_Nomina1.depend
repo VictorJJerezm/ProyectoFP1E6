@@ -94,17 +94,18 @@
 	<conio.h>
 	<iostream>
 
-1652849338 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\menus.cpp
+1652904479 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\menus.cpp
 	"menus.h"
 	"conceptos.h"
 	"impuestos.h"
 	"informe.h"
+	"empleados.h"
 	<iostream>
 	<fstream>
 	<iomanip>
 	<cstdlib>
 
-1652850074 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\informe.cpp
+1652904479 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\informe.cpp
 	<iostream>
 	<istream>
 	<fstream>
@@ -117,4 +118,16 @@
 	"menus.h"
 
 1652849324 c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\include\informe.h
+
+1652904479 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\empleados.cpp
+	<iostream>
+	"empleados.h"
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652902379 c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\include\empleados.h
+	<iostream>
 

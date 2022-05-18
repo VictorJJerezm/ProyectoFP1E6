@@ -5,6 +5,7 @@
 #include<cstdlib>
 #include<conio.h>
 #include<iomanip>
+#include "menus.h"
 using namespace std;
 empleados::empleados()
 {
@@ -37,7 +38,7 @@ void empleados::menu()
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"Ingresa tu Opcion: ";
     cin>>choice;
-    empleados coma;
+    menus gomu;
 
     switch(choice)
     {
@@ -62,7 +63,7 @@ void empleados::menu()
 		delet();
 		break;
 	case 6:
-		exit(0);
+		gomu.menuGeneral();
 	default:
 		cout<<"\n\t\t\t Opcion invalida...";
 	}
