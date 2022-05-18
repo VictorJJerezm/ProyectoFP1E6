@@ -2,6 +2,7 @@
 #include "conceptos.h"
 #include "impuestos.h"
 #include "informe.h"
+#include "empleados.h"
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -105,17 +106,12 @@ void menus::mantenimientos(){
         cin>>choice;
 
         impuestos punto;
+        empleados coma;
 
         switch(choice)
         {
     case 1:
-    	/*do
-    	{
-
-    		menu2();
-    		cout << "\t\t\t ¿Quieres seguir en el apartado de empleados? (S/N)";
-    		cin>>s;
-		}while(s=='s'||s=='S');*/
+    	coma.menu();
 		break;
     case 2:
 		//menuprincipal();
