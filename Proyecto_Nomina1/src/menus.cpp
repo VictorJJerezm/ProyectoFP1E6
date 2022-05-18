@@ -3,6 +3,7 @@
 #include "impuestos.h"
 #include "informe.h"
 #include "empleados.h"
+#include "bitacora.h"
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -35,7 +36,8 @@ void menus::menuGeneral(){
     cout << "\t\t\t  4. Transferencia bancaria"<<endl;
     cout << "\t\t\t  5. Generación de Poliza"<<endl;
     cout << "\t\t\t  6. Impuestos"<<endl;
-    cout << "\t\t\t  7. Salir"<<endl;
+    cout << "\t\t\t  7. Bitacora"<<endl;
+    cout << "\t\t\t  8. Salir"<<endl;
 
     cout << "\t\t\t *********************************************"<<endl;
     cout << "\t\t\t Opcion a escoger : [1/2/3/4/5/6/7]"<<endl;
@@ -45,6 +47,8 @@ void menus::menuGeneral(){
 
     conceptos punto;
     informe gomu;
+    bitacora bita;
+
     switch(choice)
     {
     case 1:
@@ -70,9 +74,12 @@ void menus::menuGeneral(){
     case 6:
         punto.menu();
         break;
-	case 7:
-	    exit(0);
-		break;
+    case 7:
+        bita.menubitacora();
+        break;
+    case 8:
+        exit(0);
+        break;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 		cin.get();
@@ -434,3 +441,5 @@ void impuestos::crearArchivoCredito()
          reinterpret_cast< const char * >( &clienteEnBlanco ),
          sizeof( impuestos ) );
 }
+
+
