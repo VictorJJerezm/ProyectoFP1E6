@@ -1,4 +1,6 @@
-#include<iostream>
+#include "transferencia.h"
+#include "menus.h"
+#include <iostream>
 #include <istream>
 #include <fstream>
 #include <stdlib.h>
@@ -6,20 +8,19 @@
 #include <cstdlib>
 #include <conio.h>
 #include <iomanip>
-#include "cuenta.h"
 
-using namespace std;
-cuenta::cuenta()
+
+transferencia::transferencia()
 {
     //ctor
 }
 
-cuenta::~cuenta()
+transferencia::~transferencia()
 {
     //dtor
 }
 
-void cuenta::menu()
+void transferencia::menu1()
 {
 
 
@@ -41,12 +42,13 @@ void cuenta::menu()
 	cout<<"\t--------------------------------------"<<endl;
 	cout<<"Ingresa Tu Opcion: ";
     cin>>choice;
+    menus tilde;
 switch(choice)
     {
     case 1:
     	do
     	{
-    		insert();
+    		insertdi();
     		cout<<"\t Desea ingresar mas dinero?(Y,N): ";
     		cin>>x;
 		}while(x=='y'||x=='Y');
@@ -59,10 +61,10 @@ switch(choice)
     		cin>>x;
 		}while(x=='y'||x=='Y');
 		break;
-	case 3: search();
+	case 3: searchtrans();
 		break;
 	case 4:
-		exit(0);
+		tilde.menuGeneral();
 
 	default:
 		cout<<"\n\t\t La transferencia fue cancelada";
@@ -71,8 +73,9 @@ switch(choice)
     }while(choice!= 4);
 
 }
-void cuenta::insert()
+void transferencia::insertdi()
 {
+	 string ncuenta, dinero;
 	system("cls");
 	fstream file;
 	cout<<"\t-----------------------------------------"<<endl;
@@ -86,8 +89,9 @@ void cuenta::insert()
 	file<<std::left<<std::setw(15)<<ncuenta <<std::left<<std::setw(15)<<dinero << "\n";
 	file.close();
 }
-void cuenta::inserttrans()
+void transferencia::inserttrans()
 {
+    string ncuentat, cantidad;
     system("cls");
 	fstream file;
 	cout<<"\t------------------------------------"<<endl;
@@ -102,8 +106,9 @@ void cuenta::inserttrans()
 	file.close();
 }
 
-void cuenta::search()
+void transferencia::searchtrans()
 {
+    string ncuentat, cantidad;
     system("cls");
 	fstream file;
 	int found=0;
