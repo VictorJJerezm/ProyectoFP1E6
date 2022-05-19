@@ -4,6 +4,7 @@
 #include "informe.h"
 #include "empleados.h"
 #include "bitacora.h"
+#include "puestos.h"
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -114,6 +115,7 @@ void menus::mantenimientos(){
 
         impuestos punto;
         empleados gomu;
+        Puestos pueston;
 
         switch(choice)
         {
@@ -121,7 +123,7 @@ void menus::mantenimientos(){
     	gomu.menu();
 		break;
     case 2:
-		//menuprincipal();
+		pueston.menuprincipalpuestos();
 		break;
 	case 3:
 		//menu3();
