@@ -201,19 +201,20 @@
 	<conio.h>
 	<iostream>
 
-1652913852 source:c:\users\guvir\proyectofp1e6\proyecto_nomina1\src\menus.cpp
+1652919727 source:c:\users\guvir\proyectofp1e6\proyecto_nomina1\src\menus.cpp
 	"menus.h"
 	"conceptos.h"
 	"impuestos.h"
 	"informe.h"
 	"empleados.h"
 	"bitacora.h"
+	"puestos.h"
 	<iostream>
 	<fstream>
 	<iomanip>
 	<cstdlib>
 
-1652913752 source:c:\users\guvir\proyectofp1e6\proyecto_nomina1\src\bitacora.cpp
+1652914091 source:c:\users\guvir\proyectofp1e6\proyecto_nomina1\src\bitacora.cpp
 	<iostream>
 	<istream>
 	<fstream>
@@ -226,4 +227,7 @@
 	"menus.h"
 
 1652912778 c:\users\guvir\proyectofp1e6\proyecto_nomina1\include\bitacora.h
+
+1652919616 c:\users\guvir\proyectofp1e6\proyecto_nomina1\include\puestos.h
+	<iostream>
 
