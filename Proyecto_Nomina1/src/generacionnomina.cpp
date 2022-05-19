@@ -5,6 +5,7 @@
 #include <conio.h>
 #include <iomanip>
 #include "generacionnomina.h"
+#include "menus.h"
 
 using namespace std;
 
@@ -16,7 +17,7 @@ generacionnomina::~generacionnomina(){
 
 }
 
-void generacionnomina::menuprincipal()
+void generacionnomina::menuprincipalgeneracionnomina()
 {
     int opcion;
 	int x;
@@ -31,14 +32,13 @@ void generacionnomina::menuprincipal()
 
 	cout<<"\t 1. Ingresar datos de nueva nomina"<<endl;
 	cout<<"\t 2. Ver nominas actuales"<<endl;
-	cout<<"\t 3. Transferir nominas"<<endl;
-	cout<<"\t 4. Enviar nominas"<<endl;
-	cout<<"\t 5. Salir"<<endl;
+	cout<<"\t 3. Salir"<<endl;
 
     cout<<"-"<<endl;
 
     cout<<"\n\t RESPUESTA: ";
     cin>>opcion;
+    menus genera;
 
     switch(opcion)
     {
@@ -46,7 +46,7 @@ void generacionnomina::menuprincipal()
     	do
     	{
     		generar();
-    		cout<<"\n\t ¿Deseas generar una nueva nomina?"<<endl;
+    		cout<<"\n\t ï¿½Deseas generar una nueva nomina?"<<endl;
     		cout<<"\n\t 1. Si"<<endl;
     		cout<<"\n\t 2. No"<<endl;
     		cout<<"-"<<endl;
@@ -58,13 +58,7 @@ void generacionnomina::menuprincipal()
 		vernominas();
 		break;
     case 3:
-        transferencia();
-        break;
-    case 4:
-        enviarinformes();
-        break;
-    case 5:
-        exit(5);
+        genera.menuGeneral();
 	default:
 		cout<<"\n\t Por favor, elegir un numero del 1 al 5 segun dice la pantalla";
 	}
@@ -175,68 +169,13 @@ void generacionnomina::vernominas()
 	}
 
 	cout<<"\t ."<<endl;
-	cout<<"\t NOTA: Toma en cuenta que más de 160 horas laboradas durante el mes"<<endl;
-	cout<<"\t implicaran 50 quetzales añadidos en el sueldo por cada hora extra"<<endl;
+	cout<<"\t NOTA: Toma en cuenta que mï¿½s de 160 horas laboradas durante el mes"<<endl;
+	cout<<"\t implicaran 50 quetzales aï¿½adidos en el sueldo por cada hora extra"<<endl;
 	cout<<"-"<<endl;
 	cout<<"\t Escribe 1 para regresar al menu principal"<<endl;
 	cin>>opcion;
 
     if(opcion = 1){
-        menuprincipal();
-    }
-}
-
-void generacionnomina::transferencia()
-{
-	system("cls");
-
-	fstream archivo;
-
-	int total=0;
-	int opcion, opcion2;
-
-	cout<<"\n______________________________________________________________________________________"<<endl;
-	cout<<"\n------------------------- TRANSFERENCIA DE ARCHIVOS --------------------------"<<endl;
-	cout<<"\n--------------------------------------------------------------------------------------"<<endl;
-    cout<<"\n-"<<endl;
-    cout<<"\n¿Deseas transferir las nominas generadas? Escribe 1 para confirmar"<<endl;
-    cin>>opcion;
-
-	if(opcion = 1){
-        cout<<"¡Felicidades! Los archivos han sido transferidos al sistema"<<endl;
-	}
-
-	cout<<"Escribe 1 para regresar al menu principal"<<endl;
-	cin>>opcion2;
-
-    if(opcion2 = 1){
-        menuprincipal();
-    }
-}
-
-void generacionnomina::enviarinformes(){
-	system("cls");
-
-	fstream archivo;
-
-	int total=0;
-	int opcion, opcion2;
-
-	cout<<"\n______________________________________________________________________________________"<<endl;
-	cout<<"\n------------------------- ENVÍO DE ARCHIVOS --------------------------"<<endl;
-	cout<<"\n--------------------------------------------------------------------------------------"<<endl;
-    cout<<"\n-"<<endl;
-    cout<<"\n¿Deseas enviar las nominas generadas? Escribe 1 para confirmar"<<endl;
-    cin>>opcion;
-
-	if(opcion = 1){
-        cout<<"¡Felicidades! Los archivos han sido enviados al sistema"<<endl;
-	}
-
-	cout<<"Escribe 1 para regresar al menu principal"<<endl;
-	cin>>opcion2;
-
-    if(opcion2 = 1){
-        menuprincipal();
+        menuprincipalgeneracionnomina();
     }
 }
