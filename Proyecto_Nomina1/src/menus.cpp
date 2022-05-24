@@ -1,8 +1,17 @@
+//Clases llamadas
 #include "menus.h"
 #include "conceptos.h"
 #include "impuestos.h"
 #include "informe.h"
 #include "empleados.h"
+#include "Banco.h"
+#include "Empresas.h"
+#include "Poliza.h"
+#include "transferencia.h"
+#include "departamentos.h"
+#include "puestos.h"
+#include "generacionnomina.h"
+//librerias
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -44,7 +53,11 @@ void menus::menuGeneral(){
     cin>>choice;
 
     conceptos punto;
-    informe coma;
+    informe gomu;
+    Poliza met;
+    transferencia tilde;
+    generacionnomina genera;
+
     switch(choice)
     {
     case 1:
@@ -56,21 +69,21 @@ void menus::menuGeneral(){
 		}while(x=='y'||x=='Y');*/
 		break;
 	case 2:
-		//display();
+		genera.menuprincipalgeneracionnomina();
 		break;
 	case 3:
-		coma.menu();
+		gomu.menu();
 		break;
 	case 4:
-		//search();
+		tilde.menu1();
 		break;
     case 5:
-        //XD();
+       met.menu();
         break;
     case 6:
         punto.menu();
         break;
-	case 7:
+    case 7:
 	    exit(0);
 		break;
 	default:
@@ -106,30 +119,34 @@ void menus::mantenimientos(){
         cin>>choice;
 
         impuestos punto;
-        empleados coma;
+        empleados gomu;
+        Banco mar;
+        Empresas av;
+        departamentos coma;
+        Puestos po;
 
         switch(choice)
         {
     case 1:
-    	coma.menu();
+    	gomu.menu();
 		break;
     case 2:
-		//menuprincipal();
+		po.menu();
 		break;
 	case 3:
-		//menu3();
+		coma.menu2();
 		break;
 	case 4:
 		punto.escribirOpcion();
 		break;
 	case 5:
-		//menu5();
+		mar.menu();
 		break;
     case 6:
-        //menu6();
+        av.menu();
         break;
 	case 7:
-		//menuGeneral();
+		menuGeneral();
 	default:
 		cout << "\t\t\t Opcion invalida...Por favor prueba otra vez..";
 	}

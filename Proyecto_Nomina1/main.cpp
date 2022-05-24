@@ -13,8 +13,8 @@ using std::right;
 using std::fixed;
 using std::showpoint;
 
-#include <ctime>
-#include <vector>
+//#include <ctime>
+//#include <vector>
 #include <fstream>
 
 using std::ofstream;

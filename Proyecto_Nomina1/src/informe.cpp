@@ -43,7 +43,7 @@ void informe::menu()
         cout << "\t\t\t *********************************************"<<endl;
         cout << "\t\t\t Selecciona tu opcion: "<<endl;
         cin>>choice;
-        menus coma;
+        menus gomu;
 
     switch(choice)
         {
@@ -62,7 +62,7 @@ void informe::menu()
 		delet();
 		break;
 	case 4:
-		coma.menuGeneral();
+		gomu.menuGeneral();
 	default:
 		cout << "\t\t\t Opcion invalida...Por favor prueba otra vez..";
 	}
